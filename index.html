@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>What's the weather?</h1>
+        <div class="col-3" id="city">
+        <form class="form-search-city" id="search-form">
+            <div>
+                <input type="text" class="form-control" placeholder="Search for a city" autofocus="on" autocomplete="off" id="city-input">
+            </div>
+            <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success" id="current-location-button">
+                Current location
+                </button>
+            </div>
+        </div>
+    <div class="container">
+        <h2 class="currentCity" id="city-name"></h2>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="date col-4">
+            <h4 id="date"></h4>
+            </div>
+            <div class="temperature col-4">
+                    <h4 class="currentTemp" id="temperature"></h4><h4>ºC</h4>
+                    <p style="font-size: 70px;">
+                        ☀️
+                    </p>
+            </div>
+            <div class="humidity col-4">
+                <h4>Humidity: <span
+                    id="humidity"></span>%
+                </h4>
+                <br/>
+                <h4>Wind: <span
+                    id="wind"></span>km/h
+                </h4>
+            </div>
+            
+        </div>
+    </div>
+  <section>
+      <div class="container">
+    <div class="row justify-content-center text-center">
+        <div class="daysData col-md-2">
+            <h4 class="days">
+                Mon
+            </h4>
+            <p>
+            <span class="temp">10°/22°</span>
+            </p>
+            <p style="font-size: 50px;">☀️</p>
+        </div>
+        <div class="daysData col-md-2">
+            <h4 class="days">
+                Tue
+            </h4>
+            <p>
+                <span class="temp">9/17º</span>
+            </p>
+            <p style="font-size: 50px;">🌧</p>
+        </div>
+        <div class="daysData col-md-2">
+            <h4 class="days">
+                Wed
+            </h4>
+            <p>
+                <span class="temp">
+                20°/12°
+                </span>
+            </p>
+            <p style="font-size: 50px;">⛅️</p>
+        </div>
+        <div class="daysData col-2">
+            <h4 class="days">
+                Thurs
+            </h4>
+            <p>
+                <span class="temp">20°/12°</span>
+            </p>
+            <p style="font-size: 50px;">☀️</p>
+
+        </div>
+        <div class="daysData col-md-2">
+            <h4 class="days">
+                Fri
+            </h4>
+            <p>
+                <span class="temp">20°/12°</span>
+            </p>
+            <p style="font-size: 50px;">⛅️</p>
+        </div>
+    </div>
+</div>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>

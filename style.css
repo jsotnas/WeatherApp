@@ -1,0 +1,55 @@
+h1 {
+color: teal;
+text-align: center;
+padding-top: 50px;
+font-family: 'Poppins', sans-serif;
+}
+#city {
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.btn-primary {
+    color: white;
+    background-color: grey;
+    border-color: teal;
+    display: block;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-success {
+    display: block;
+    margin: 10px auto;
+    font-family: 'Poppins', sans-serif;
+}  
+.currentCity {
+    color: teal;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.currentTemp {
+    font-weight: 400;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 0;
+}
+.date {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.temperature {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.precipitation {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.daysData {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
